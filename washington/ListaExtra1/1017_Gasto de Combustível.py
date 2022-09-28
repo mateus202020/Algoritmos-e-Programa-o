@@ -22,3 +22,9 @@ Exemplo de Entrada	Exemplo de Saída
 67
 
 122.833'''
+tempo = int(input())
+velocidade = int(input())
+km = (velocidade*tempo)
+litros = km/12
+
+print("%.3f"%litros)

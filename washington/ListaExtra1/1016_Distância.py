@@ -15,3 +15,10 @@ Exemplo de Entrada	Exemplo de Saída
 
 7
 14 minutos'''
+ganho = 30 # Carro Y ganha 30 km a cada 1 hora
+min = 60
+km = int(input())
+tempo = (min * km)/ganho
+
+print("%i minutos"%(tempo))
+
