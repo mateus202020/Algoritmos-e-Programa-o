@@ -73,45 +73,30 @@ dezR = 0
 vintR = 0
 cinqR = 0
 cemR = 0
-while n > 0.00:
-    umC = umC + 1
-    if umC == 5:
-        cinC = cinC + 1
-        umC = 0
-    if cinC == 2:
-        dezC = dezC + 1
-        cinC = 0        
-    if dezC > 2:
-        vincinC = vincinC + 1
-        cinC = cinC + 1
-        dezC = 0        
-    if vincinC == 2:
-        cinqC = cinqC + 1
-        vincinC = 0        
-    if cinqC == 2:
-        umR = umR + 1
-        cinqC = 0        
-    if umR == 2:
-        doisR = doisR + 1
-        umR = 0        
-    if doisR > 2:
-        cinR = cinR + 1
-        doisR = 0
-        umR = umR + 1        
-    if cinR == 2:
-        dezR = dezR + 1
-        cinR = 0        
-    if dezR == 2:
-        vintR = vintR + 1
-        dezR = 0        
-    if vintR > 2:
-        cinqR = cinqR + 1
-        dezR = dezR +1
-        vintR = 0        
-    if cinqR == 2:
-        cemR = cemR +1
-        cinqR = 0        
-    n = n - 0.01
+cemR = n // 100
+resto = n % 100
+cinqR = resto // 50
+resto = resto % 50
+vintR = resto // 20
+resto = resto % 20
+dezR = resto // 10
+resto = resto % 10
+cinR = resto // 5
+resto = resto % 5
+doisR = resto // 2
+resto = resto % 2
+umR = resto // 1
+resto = resto % 1
+cinqC = resto // 0.50
+resto = resto % 0.50
+vincinC = resto // 0.25
+resto = resto % 0.25
+dezC = resto // 0.10
+resto = resto % 0.10
+cinC = resto // 0.05
+resto = resto % 0.05
+umC = resto
+
 print("NOTAS:")
 print("%i nota(s) de R$ 100.00"%(cemR))
 print("%i nota(s) de R$ 50.00"%(cinqR))
@@ -120,9 +105,9 @@ print("%i nota(s) de R$ 10.00"%(dezR))
 print("%i nota(s) de R$ 5.00"%(cinR))
 print("%i nota(s) de R$ 2.00"%(doisR))
 print("MOEDAS:")
-print("%i moedas(s) de R$ 1.00"%(umR))
-print("%i moedas(s) de R$ 0.50"%(cinqC))
-print("%i moedas(s) de R$ 0.25"%(vincinC))
-print("%i moedas(s) de R$ 0.10"%(dezC))
-print("%i moedas(s) de R$ 0.05"%(cinC))
-print("%i moedas(s) de R$ 0.01"%(umC))
+print("%i moeda(s) de R$ 1.00"%(umR))
+print("%i moeda(s) de R$ 0.50"%(cinqC))
+print("%i moeda(s) de R$ 0.25"%(vincinC))
+print("%i moeda(s) de R$ 0.10"%(dezC))
+print("%i moeda(s) de R$ 0.05"%(cinC))
+print("%i moeda(s) de R$ 0.01"%(umC))
