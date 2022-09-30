@@ -1,3 +1,4 @@
+
 # https://www.beecrowd.com.br/judge/pt/custom-problems/view/1760
 
 idade = 0
@@ -18,4 +19,3 @@ while contador <= 4:
 media_idade = soma_idade / 4
 
 print('Qtd pessoas > 90Kg: %i' % pessoas_acima_90kg)
-print('Idade média: %.2f' % media_idade)

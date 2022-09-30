@@ -1,3 +1,4 @@
+
 # https://www.beecrowd.com.br/judge/pt/custom-problems/view/1713
 
 valor_hora = float(input(""))

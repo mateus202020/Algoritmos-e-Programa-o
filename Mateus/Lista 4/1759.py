@@ -1,3 +1,4 @@
+
 # https://www.beecrowd.com.br/judge/pt/custom-problems/view/1759
 
 ano = int(input())
@@ -9,5 +10,3 @@ if ano > 2005:
         percentual = percentual + 1
         ano = ano - 1
     print("Salário atual: R$%.2f" %salario)
-else:
-    print("O ano informado deverá ser > 2005!")

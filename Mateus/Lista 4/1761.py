@@ -1,3 +1,4 @@
+
 # https://www.beecrowd.com.br/judge/pt/custom-problems/view/1761
 
 total=0

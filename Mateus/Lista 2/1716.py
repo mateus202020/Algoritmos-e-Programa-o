@@ -1,3 +1,4 @@
+
 # https://www.beecrowd.com.br/judge/pt/custom-problems/view/1716
 
 tipo_plano = input("")
@@ -15,4 +16,3 @@ elif tipo_plano == 'B':
 
 elif tipo_plano == 'C':
        aumento = (salario_atual * 0.20) + salario_atual
-       print("Novo salário: R$%.2f"%aumento)

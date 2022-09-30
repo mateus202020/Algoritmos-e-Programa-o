@@ -1,3 +1,4 @@
+
 # https://www.beecrowd.com.br/judge/pt/custom-problems/view/1735
 
 x = int(input(""))
@@ -10,4 +11,3 @@ while x >= y:
         
         
 
-print("Fogo!")
