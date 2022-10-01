@@ -60,7 +60,7 @@ MOEDAS:
 0 moeda(s) de R$ 0.10
 0 moeda(s) de R$ 0.05
 1 moeda(s) de R$ 0.01'''
-n = float(input())
+n = float (input())
 umC = 0
 cinC = 0
 dezC = 0
@@ -73,6 +73,7 @@ dezR = 0
 vintR = 0
 cinqR = 0
 cemR = 0
+resto = 0
 cemR = n // 100
 resto = n % 100
 cinqR = resto // 50
@@ -95,7 +96,8 @@ dezC = resto // 0.10
 resto = resto % 0.10
 cinC = resto // 0.05
 resto = resto % 0.05
-umC = resto
+umC = resto // 0.009
+
 
 print("NOTAS:")
 print("%i nota(s) de R$ 100.00"%(cemR))
